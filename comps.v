@@ -78,7 +78,6 @@ pub fn comp2_map(w &World) &Comp2Map {
 	cm := &Comp2Map{
 		w: w
 	}
-	// println(cm.w)
 	return cm
 }
 
@@ -95,6 +94,5 @@ pub fn comp2(w &World) &Comp2Map {
 pub fn (mut c2m Comp2Map) set(ename string, comp Comp2) {
 	w := c2m.w
 	eint := w.e[ename]
-	// println("add $eint $ename $comp")
 	c2m.e[eint] = comp
 }
